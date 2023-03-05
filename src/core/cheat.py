@@ -10,16 +10,16 @@ class Cheat:
         self.base_address = 0x00400000
         self.pointers = {
             'ammo': self.process.get_pointer(
-                self.base_address+0x0016F338,
-                offsets=[0x0, 0x80, 0x140]
+                self.base_address+0x0017F110,
+                offsets=[0x0, 0x140]
             ),
             'health': self.process.get_pointer(
                 self.base_address+0x00183828,
                 offsets=[0x8, 0x24, 0x64, 0x34, 0x98, 0x64, 0x36C]
             ),
             'grenade': self.process.get_pointer(
-                self.base_address+0x0016F338,
-                offsets=[0x0, 0xA8, 0x144]
+                self.base_address+0x0017F110,
+                offsets=[0x0, 0x144]
             )
         }
         self.values = {
