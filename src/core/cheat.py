@@ -43,5 +43,6 @@ class Cheat:
                 self.process.write(self.pointers[k], self.values[k])
 
     def run(self):
-        self.read_values()
-        self.write_values()
+        while 1:
+            self.read_values()
+            self.write_values()
