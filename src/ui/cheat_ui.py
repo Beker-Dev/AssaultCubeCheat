@@ -3,7 +3,7 @@ import termcolor
 from core.cheat import Cheat
 
 class CheatUI:
-    def __init__(self, title: str, settings: dict, cheat: Cheat):
+    def __init__(self, title: str, settings: dict):
         self.title = title.title().strip()
         self.spacing = len(title) + 50
         self.settings = settings

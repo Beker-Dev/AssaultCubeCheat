@@ -8,7 +8,7 @@ import threading
 if __name__ == '__main__':
     settings = get_settings()
     cheat = Cheat(settings=settings)
-    cheat_ui = CheatUI(title='Assault Cube Cheat - Made By Beker', settings=settings, cheat=cheat)
+    cheat_ui = CheatUI(title='Assault Cube Cheat - Made By Beker', settings=settings)
 
     cheat_ui_thread = threading.Thread(target=cheat_ui.run)
     cheat_ui_thread.start()
